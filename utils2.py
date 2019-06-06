@@ -34,9 +34,9 @@ def mergeValue(data_from_redis, data_new):
     data_new: new data
     """
     if data_from_redis == None:
-        data_from_redis = b"[]"
+        data_from_redis = "[]"
     else:
-        data_from_redis = gzip.decompress(data_from_redis)
+        data_from_redis = gzip.decompress(data_from_redis).decode('utf8')
 
     o = set(json.loads(data_from_redis))
     ret = o|data_new # merge two set
@@ -45,4 +45,4 @@ def mergeValue(data_from_redis, data_new):
 def parseRedisValue(redisRes):
     if redisRes == None:
         return []
-    return json.loads(gzip.decompress(redisRes))
+    return json.loads(gzip.decompress(redisRes).decode("utf8"))
