@@ -1,9 +1,11 @@
 # 一个神奇小游戏的无聊外挂
 
 `danju-gzipJson.ldb / shuangju-gzipJson.ldb` : processed data source
+
 DATA struct: `{<key, char[2]>: <val, json{<array> 诗句}>}`
 
 `json`: data from https://github.com/chinese-poetry/chinese-poetry/tree/master/json
+
 `json-zhcn`: data of `json/` in simplified chinese
 
 HOW TO RUN:
