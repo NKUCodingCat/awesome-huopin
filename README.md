@@ -18,7 +18,10 @@ python3 -m pip install -r req.txt
 python3 1-trans.py
 
 # Generate database 
+### WARNING: It will takes you about 2hours, take it easy
+
 python3 4-json2LevelDB.py
+
 ```
 
 Daily usage:
