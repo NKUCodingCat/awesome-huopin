@@ -1,0 +1,7 @@
+opencc-python-reimplemented
+six
+zhon
+plyvel
+ujson
+flask
+bottle

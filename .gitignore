@@ -1,0 +1,6 @@
+json*/*
+!json*/.gitkeep
+*.ldb/*
+!*.ldb/.gitkeep
+__pycache__
+*.log
